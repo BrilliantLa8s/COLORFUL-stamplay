@@ -1,0 +1,15 @@
+{
+  "appId": "colorful",
+  "apiKey": "92b281c1af350adc6e961bbad9c5a0f5fbf25e9f2072512981debe7db45def3d",
+  "public": "./public",
+  "ignore": [
+    "./src",
+    "gulpfile.js",
+    "package.json",
+    "README.md",
+    "stamplay.json",
+    "vendor.js",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
