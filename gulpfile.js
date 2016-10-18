@@ -88,7 +88,7 @@ gulp.task('watch:views', function() {
 gulp.task('serve', function () {
   connect.server({
     root: './public',
-    port: '8000',
+    port: '8080',
     livereload: true,
     fallback: './public/index.html',
   });

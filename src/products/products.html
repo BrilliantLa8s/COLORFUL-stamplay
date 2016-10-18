@@ -1,0 +1,20 @@
+<section>
+  <div class="container">
+    <div layout="row" layout-fill layout-align="center center" layout-wrap>
+      <div flex>
+        <md-grid-list
+          md-cols-xs="1" md-cols-sm="3" md-cols-gt-sm="4"
+          md-row-height-xs="2:1" md-row-height-gt-xs="1:1"
+          md-gutter="0px" md-gutter-gt-sm="0px">
+          <md-grid-tile ng-repeat="p in products | orderBy:'dt_create'"
+            class="tile {{colors[$index % 5]}}">
+            <!-- <a  target="_blank">
+             <div image class='{{p.image}}'></div>
+            </a> -->
+          </md-grid-tile>
+        </md-grid-list>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</section>

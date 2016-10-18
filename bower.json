@@ -1,0 +1,21 @@
+{
+  "name": "coloful",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Ricky Brown <ricky@brilliantlabs.co>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-stamplay": "^0.0.3"
+  }
+}

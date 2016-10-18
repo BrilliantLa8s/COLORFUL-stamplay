@@ -1,0 +1,68 @@
+md-toolbar.mainnav {
+  background: $white;
+  color: $dark;
+  & .md-toolbar-tools.navbar {
+    padding:0;
+    & md-icon[account] {
+      font-size:34px;
+      top:-7px;
+    }
+    & md-icon {
+      color: $dark;
+      &:hover {
+        color: $green;
+      }
+    }
+    & .brand {
+      padding:0 15px;
+      font-weight:bold;
+      color:$green;
+    }
+    & .md-button {
+      min-width:0;
+      // margin:6px 0 6px 16px;
+      &:hover {
+        color:$green;
+        background-color: transparent;
+      }
+      &.active {
+        color:$green;
+        background:#fff;
+        & md-icon {
+          color:$green;
+        }
+      }
+
+      &.bold {
+        font-weight:bold;
+        color: $green;
+      }
+    }
+
+    & md-fab-speed-dial {
+      & md-icon {
+       color:$theme2;
+      }
+      &:not(.md-is-open) md-fab-actions {
+        // Something
+      }
+    }
+    & md-divider {
+      border-color:#fff;
+    }
+  }
+
+  // Sidenavs
+  md-sidenav {
+    min-width: 60px;
+    & md-list-item {
+      // padding:0 15px;
+      & .md-button {
+        min-width:0;
+        margin:0;
+        padding: 5px 15px;
+        border-radius:0;
+      }
+    }
+  }
+}

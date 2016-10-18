@@ -1,0 +1,18 @@
+.tile {
+  cursor:pointer;
+  &.primary {
+    background-color:$primary;
+  }
+  &.accent {
+    background-color:$accent;
+  }
+  &.warn {
+    background-color:$warn;
+  }
+  &.blue {
+    background-color:$blue;
+  }
+  &.yellow {
+    background-color:$yellow;
+  }
+}

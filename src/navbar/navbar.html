@@ -1,0 +1,48 @@
+<!-- Main/Auth Nav -->
+<md-toolbar class="mainnav">
+  <div class="container md-toolbar-tools navbar">
+    <!-- Mobile menu button -->
+    <span hide-gt-sm>
+      <md-button
+        aria-label="User Settings"
+        ng-click="toggleLeft()">
+        <md-icon>menu</md-icon>
+      </md-button>
+    </span>
+    <span flex hide-gt-sm></span>
+    <a class="brand" ui-sref="main" href="#" >
+      <span>COLORFUL</span>
+    </a>
+    <span flex></span>
+    <span hide show-gt-sm layout="row">
+      <md-button ng-repeat="nav in mainmenu"
+        ui-sref-active="active" ui-sref="{{nav.state}}">
+        <!-- <md-icon ng-if="nav.icon">{{nav.icon}}</md-icon> -->
+        <span>{{nav.link}}</span>
+      </md-button>
+    </span>
+    <!-- Moblie login button -->
+    <md-button ui-sref-active="active" ui-sref="login" ng-hide="currentUser" hide-gt-sm>
+      <md-icon>person</md-icon>
+    </md-button>
+    <!-- Mobile account button -->
+    <md-button hide-gt-sm
+      aria-label="User Settings"
+      ng-click="toggleRight()"
+      ng-show="currentUser">
+      <md-icon>person</md-icon>
+    </md-button>
+    <!-- Non-mobile account menu -->
+    <ng-include src="'auth/_authmenu.html'" hide show-gt-sm></ng-include>
+    <!-- Non-mobile search -->
+    <!-- <md-button ng-click="showSearch()">
+      <md-icon>search</md-icon>
+    </md-button> -->
+  </div>
+</md-toolbar>
+
+<!-- Mobile nav menu -->
+<ng-include src="'navbar/_navbarmobile.html'"></ng-include>
+
+<!-- Mobile account menu -->
+<ng-include src="'auth/_authmenumobile.html'"></ng-include>
